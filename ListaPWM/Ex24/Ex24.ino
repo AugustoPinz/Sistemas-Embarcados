@@ -1,5 +1,5 @@
 const int pinoSensor = A0;
-const int pinoVentilador = 3; // Pino PWM obrigatório
+const int pinoVentilador = 3; 
 void setup() {
   pinMode(pinoVentilador, OUTPUT);
   Serial.begin(9600);
