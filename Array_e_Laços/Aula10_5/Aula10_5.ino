@@ -5,11 +5,14 @@ void setup() {
  
   for (int i = 0; i < 3; i++) {
     pinMode(leds[i], OUTPUT);
-    digitalWrite(leds[i], HIGH); 
-    delay(tempos[i]);            
-    digitalWrite(leds[i], LOW);  
-  }
+ }
 }
 
 void loop() {
+  for (int i = 0; i < 3; i++) {
+  digitalWrite(leds[i], HIGH); 
+  delay(tempos[i]);            
+  digitalWrite(leds[i], LOW);  
+  }
+   
 }
